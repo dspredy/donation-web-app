@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<form method="post" action="send.php" >
+		Full Name <input type="text" name="fname" required="required"><br/>
+        Contact Number <input type="tel" name="cno" required><br/>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male" >Male</input>
+        <input type="radio" name="gender" value="female">Female</input>
+        <input type="radio" name="gender" value="other">Other</input>
+        <br/>
+        Email Id <input type="email" name="email" required><br/>
+        Guardian Name  <input type="text" name="gname"  required="required"><br/>
+        Guardian Contact Number <input type="tel" name="gcno" required><br/>
+        
+        <label for ="age">Is your age is above 18 </label>
+        <input type="radio" name="age" value="yes">Yes</input>
+        <input type="radio" name="age" value="no">No</input>
+        <br/>
+        Date of birth <input type="date" name="dob" required="required"><br/>
+        
+        <label for="grp"> Select Your Blood group </label>
+        <select name="grp">
+            <option value="A+"> A+ </option>
+            <option value="A-"> A- </option>
+            <option value="O+"> O+ </option>
+            <option value="O-"> O- </option>
+            <option value="AB+"> AB+ </option>
+            <option value="AB-"> AB- </option>
+        </select><br/>
+        <button type="submit"> Submit</button>
+        <script src="script.js"></script>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	     <title> Please Enter your details: </title>
+         <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <form method="post" action="send.php">
+            Full Name <input type = "text" name="fname" required="required"><br/>
+            Contact Number: <input type="tel" name="cno" required="required"><br/>
+            Email ID <input type="email" name="email" required="required"><br/>
+            <label for = "gender"> Select gender</label>
+            <input type="radio" name="gender" value="male">Male</input>
+            <input type="radio" name="gender" value="female">Female</input>
+            <input type="radio" name="gender" value="other">Others</input><br/>
+            Guardian Name <input type="text"  name="gname" required="required"><br/>
+            Guardian Contact Number: <input type="tel" name="gcno"  required="required"><br/>
+            Date of Birth<input type="date" name="dob" required><br/>
+            <label for="grp">Select your Blood group</label>
+            <select name="grp">
+                <option value="A+"> A+ </option>
+                <option value="A-"> A- </option>
+                <option value="AB+"> AB+ </option>
+                <option value="AB-"> AB- </option>
+                <option value="O+"> O+ </option>
+                <option value="O-"> O- </option>
+            </select><br/>
+            <button type="submit">Submit</button>
+        </form>
+    </body>    
+</html>
